@@ -34,4 +34,8 @@ public class Student {
         this.marks = mark;
     }
 
+    @Override
+    public String toString() {
+        return "Student [rollNo=" + rollNo + ", name=" + name + ", marks=" + marks + "]";
+    }
 }

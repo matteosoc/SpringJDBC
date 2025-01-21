@@ -22,7 +22,6 @@ public class StudentService {
     }
 
     public void addStudent(Student s) {
-        System.out.println("added");
         repo.save(s);
     }
 

@@ -26,9 +26,9 @@ public class StudentRepo {
     }
 
     public void save(Student s) {
-        String sql = "insert into student (rollno, name, marks) values (?,?,?)";
+        String sql = "insert into student (rollno,name,marks) values (?,?,?)";
 
-        int rows = jdbc.update(sql, s.getRollNo(), s.getName(), s.getMarks());
+        int rows = jdbc.update(sql,s.getRollNo(),s.getName(),s.getMarks());
         System.out.println(rows + "effected");
     }
 
